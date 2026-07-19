@@ -1,0 +1,736 @@
+{
+  "info": {
+    "_postman_id": "f3d25904-417b-4730-acd0-68bc58df1ec7",
+    "name": "faym-assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44808089"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "create-user",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"test@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/users/",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create-user",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"test@gmail.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/users/",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "269"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"10d-0WPMenRG9BPnnF2pmNmUpxcTQXw\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 08:58:29 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"name\": \"test\",\n        \"email\": \"test@gmail.com\",\n        \"withdrawableBalance\": 0,\n        \"lastWithdrawalAt\": null,\n        \"_id\": \"6a5c91b58277ed61023de296\",\n        \"createdAt\": \"2026-07-19T08:58:29.427Z\",\n        \"updatedAt\": \"2026-07-19T08:58:29.427Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sales",
+      "item": [
+        {
+          "name": "create-sale",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": \"6a5c91b58277ed61023de296\",\r\n  \"brand\": \"Nike\",\r\n  \"product\": \"Shoes\",\r\n  \"earning\": 1000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/v1/sales/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "v1",
+                "sales",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create-sale",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"userId\": \"6a5c91b58277ed61023de296\",\r\n  \"brand\": \"Nike\",\r\n  \"product\": \"Shoes\",\r\n  \"earning\": 1000\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/sales/",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "sales",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "360"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"168-m6NVyFG+JNzrBxn0CIFjECP+vJM\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 09:05:52 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Sale created successfully\",\n    \"sale\": {\n        \"user\": \"6a5c91b58277ed61023de296\",\n        \"brand\": \"Nike\",\n        \"product\": \"Shoes\",\n        \"earning\": 1000,\n        \"status\": \"pending\",\n        \"advancePaid\": false,\n        \"advanceAmount\": 0,\n        \"reconciled\": false,\n        \"reconciledAt\": null,\n        \"_id\": \"6a5c936f621b3183dfebf130\",\n        \"createdAt\": \"2026-07-19T09:05:51.974Z\",\n        \"updatedAt\": \"2026-07-19T09:05:51.974Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "get-sales",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/sales/",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "sales",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get-sales",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/sales/",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "sales",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "413"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"19d-eixu+YwwHtDWPfCW6idDmr/G3eA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 09:08:42 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Sales retrieved successfully\",\n    \"sales\": [\n        {\n            \"_id\": \"6a5c936f621b3183dfebf130\",\n            \"user\": {\n                \"_id\": \"6a5c91b58277ed61023de296\",\n                \"name\": \"test\",\n                \"email\": \"test@gmail.com\"\n            },\n            \"brand\": \"Nike\",\n            \"product\": \"Shoes\",\n            \"earning\": 1000,\n            \"status\": \"pending\",\n            \"advancePaid\": false,\n            \"advanceAmount\": 0,\n            \"reconciled\": false,\n            \"reconciledAt\": null,\n            \"createdAt\": \"2026-07-19T09:05:51.974Z\",\n            \"updatedAt\": \"2026-07-19T09:05:51.974Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "update-status",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"saleId\": \"6a5c936f621b3183dfebf130\",\r\n    \"status\": \"approved\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/sales/update-status",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "sales",
+                "update-status"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "update-status",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"saleId\": \"6a5c936f621b3183dfebf130\",\r\n    \"status\": \"approved\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/sales/update-status",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "sales",
+                    "update-status"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "309"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"135-wMITpqNHoIN72xCVtu27OHK1yCQ\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 09:35:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Final payout processed successfully\",\n    \"payout\": {\n        \"user\": \"6a5c91b58277ed61023de296\",\n        \"sale\": \"6a5c936f621b3183dfebf130\",\n        \"amount\": 900,\n        \"type\": \"FINAL\",\n        \"status\": \"SUCCESS\",\n        \"_id\": \"6a5c9a6c621b3183dfebf132\",\n        \"createdAt\": \"2026-07-19T09:35:40.318Z\",\n        \"updatedAt\": \"2026-07-19T09:35:40.318Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "payout",
+      "item": [
+        {
+          "name": "advance",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"saleId\":\"6a5c936f621b3183dfebf130\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/advance",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "payout",
+                "advance"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "advance",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"saleId\":\"6a5c936f621b3183dfebf130\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/advance",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "payout",
+                    "advance"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "313"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"139-2pZ0wYC+VkQ5ZDiAHfOFCSHb2yc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 09:13:25 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Advance payout processed successfully\",\n    \"payout\": {\n        \"user\": \"6a5c91b58277ed61023de296\",\n        \"sale\": \"6a5c936f621b3183dfebf130\",\n        \"amount\": 100,\n        \"type\": \"ADVANCE\",\n        \"status\": \"SUCCESS\",\n        \"_id\": \"6a5c9535621b3183dfebf131\",\n        \"createdAt\": \"2026-07-19T09:13:25.304Z\",\n        \"updatedAt\": \"2026-07-19T09:13:25.304Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "withdraw",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"userId\": \"6a5c91b58277ed61023de296\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/withdraw/",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "payout",
+                "withdraw",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "withdraw",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"userId\": \"6a5c91b58277ed61023de296\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/withdraw/",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "payout",
+                    "withdraw",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "291"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"123-dzVfih8xHPtvk6ovEtEOyOjSJuA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 09:59:52 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Withdrawal processed successfully\",\n    \"payout\": {\n        \"user\": \"6a5c91b58277ed61023de296\",\n        \"sale\": null,\n        \"amount\": 1000,\n        \"type\": \"WITHDRAWAL\",\n        \"status\": \"SUCCESS\",\n        \"_id\": \"6a5ca0180e3837c2aa62ab87\",\n        \"createdAt\": \"2026-07-19T09:59:52.647Z\",\n        \"updatedAt\": \"2026-07-19T09:59:52.647Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "failed",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"payoutId\":\"6a5ca0180e3837c2aa62ab87\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/failed/",
+              "protocol": "https",
+              "host": [
+                "faym-backend-assignment",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "payout",
+                "failed",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "failed",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"payoutId\":\"6a5ca0180e3837c2aa62ab87\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://faym-backend-assignment.onrender.com/api/v1/payout/failed/",
+                  "protocol": "https",
+                  "host": [
+                    "faym-backend-assignment",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "payout",
+                    "failed",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "318"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"13e-439weZGXeRolBr9P5eN2lXgPKRE\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 19 Jul 2026 10:17:25 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Payout marked as failed and amount credited back successfully\",\n    \"payout\": {\n        \"_id\": \"6a5ca0180e3837c2aa62ab87\",\n        \"user\": \"6a5c91b58277ed61023de296\",\n        \"sale\": null,\n        \"amount\": 1000,\n        \"type\": \"WITHDRAWAL\",\n        \"status\": \"FAILED\",\n        \"createdAt\": \"2026-07-19T09:59:52.647Z\",\n        \"updatedAt\": \"2026-07-19T10:17:25.736Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
