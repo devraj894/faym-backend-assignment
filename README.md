@@ -195,6 +195,20 @@ Run server
 npm run dev
 ```
 
+## Postman Collection
+
+Import the Postman collection from:
+
+```text
+postman/faym-assignment.postman_collection.json
+```
+
+## Live API
+
+```text
+https://faym-backend-assignment.onrender.com
+```
+
 ---
 
 # Author
